@@ -1,0 +1,44 @@
+\documentclass{article}
+\input{config}
+
+\newcommand{\gassets}{../../}
+
+\renewcommand{\title}{
+    \Huge Verbale \textit{riunione analisti del 22/11/2022}
+
+    \tiny Versione documento: \textit{V0.0.1}
+}
+
+\newcommand{\people}{
+    \normalsize
+    \begin{center}
+        \begin{tabularx}{8cm}{l | X}            
+            \textbf{Approvazione} & Casarotto Mattia\\
+            \textbf{Segreteria} & Massarenti Alessandro\\
+            \textbf{Verifica} & Bonavigo Michele\\
+
+            \hline
+
+            \textbf{Uso} & Interno \\
+            & Esterno \\
+            \textbf{Destinatario} & \textit{Il gruppo}\\
+            & Committente \\
+        \end{tabularx}
+    \end{center}
+}
+
+
+\begin{document}
+
+\input{\gassets global-assets/tex/header}
+
+\tableofcontents
+
+\newpage
+
+\input{contenuti/adempimenti_burocratici}
+\input{contenuti/ordine_del_giorno}
+\input{contenuti/svolgimento}
+\input{contenuti/risultati}
+
+\end{document}
