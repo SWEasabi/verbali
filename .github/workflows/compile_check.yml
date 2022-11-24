@@ -41,13 +41,13 @@ jobs:
           name: verbali
           path: ./verbali
 
-      #TODO: Inserire template e aggiornare il title.
+      #TODO: Aggiornare il title.
       - name: ⚒ Install apindex and update HTML template
         run: |
           git clone --depth=1 https://github.com/paperbenni/apindex.git
           cd apindex
           rm share/apindex/index.template.html
-          curl -o share/apindex/index.template.html https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/.github/workflows/template.html
+          curl -o share/apindex/index.template.html https://raw.githubusercontent.com/SWEasabi/global-assets/main/html/ghpages_template.html
           cmake . -DCMAKE_INSTALL_PREFIX=/usr
           sudo make install
           cd ..
