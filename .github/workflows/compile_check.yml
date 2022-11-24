@@ -1,10 +1,4 @@
-on:
-  pull_request:
-  #test
-  push:
-    branches:
-      - main
-      - feature_autocompile #test
+on: [push, pull_request]
 
 jobs:
   build_docs:
@@ -97,4 +91,3 @@ jobs:
       
       - name: ⬆ Deploy artifact to GitHub Pages
         uses: actions/deploy-pages@v1
-
