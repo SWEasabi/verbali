@@ -1,4 +1,10 @@
-on: [push, pull_request]
+on:
+  pull_request:
+  #test
+  push:
+    branches:
+      - main
+      - feature_autocompile #test
 
 jobs:
   build_docs:
