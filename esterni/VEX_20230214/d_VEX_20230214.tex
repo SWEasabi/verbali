@@ -1,0 +1,39 @@
+\documentclass{article}
+\input{config}
+
+\newcommand{\gassets}{../../}
+
+\renewcommand{\title}{
+    \Huge Verbale ricevimento con:\\
+    \textit{prof. Cardin}
+}
+
+\newcommand{\people}{
+    \normalsize
+    \begin{center}
+        \begin{tabularx}{7cm}{l | X}            
+            \textbf{Approvazione} & \\
+            \textbf{Segreteria} & Pierobon Luca\\
+            \textbf{Verifica} & \\
+            \hline
+            \textbf{Uso} & Esterno\\
+            & Interno\\
+            \textbf{Destinatario} & Committente\\
+            & Il gruppo\\
+        \end{tabularx}
+    \end{center}
+}
+
+\begin{document}
+
+\input{\gassets global-assets/tex/header}
+
+\tableofcontents
+
+\newpage
+
+\input{contenuti/info-generali.tex}
+\input{contenuti/ricevimento.tex}
+\input{contenuti/discussione-finale.tex}
+
+\end{document}

@@ -1,0 +1,30 @@
+\section{Ricevimento}
+
+\subsection{Discussione iniziale}
+
+Il ricevimento è iniziato con alcuni chiarimenti riguardanti lo scambio di email avvenuto tra il gruppo e i professori circa lo stabilire una data per questo ricevimento e per la presentazione del PoC\footnote{Proof of Concept} nella prima revisione (RTB\footnote{Requirements and Technology Baseline}).
+
+In seguito si è discussa la direzione ottimale da intraprendere per lo sviluppo del PoC. Lo scopo del PoC è quello di "costringere" a fare una selezione della parte tecnologica del progetto, studiando e verificando che ogni componente si integri bene. Il PoC deve, quindi, dimostrare che abbiamo scelto e approfondito in modo esaustivo le tecnologie scelte per soddisfare quest'ultima verifica.
+
+\subsection{Domande e risposte}
+
+\subsection*{È possibile cambiare tecnologia in seguito alla presentazione del PoC?}
+
+\paragraph{Nota} L'idea iniziale era quella di procedere con Eclipse Mosquitto fino alla presentazione del PoC e in seguito sostituirla con altre tecnolgie, ad esempio HiveMQ.
+
+No, è caldamente sconsigliato cambiare tecnologia dopo la presentazione del PoC, potrebbe essere segno di una pessima analisi/progettazione. Ogni modifica alle tecnologie deve essere \textbf{giustificata}.
+
+\subsection*{Documento di \emph{Analisi dei requisiti} ideale?}
+La parte fondamentale sono i requisiti. Devono essere atomici, quantitativi e verificabili. Specificare i \textbf{Requisiti di vincolo} e i \textbf{Requisiti di funzionalità}.
+
+\subsection*{In che modo conviene (con che protocollo) far comunicare il server per fare in modo che la pagina dell'interfaccia utente si aggiorni automaticamente ad ogni cambiamento?}
+
+Questa domanda deriva da VIN\_20230111.
+
+\paragraph{Nota} Il problema principale è aggiornare in real-time le varie interfacce, mentre l'utente è collegato, ogni qualvolta il coordinatore decide di aggiornare lo stato di un lampione. Protocolli utili: XMTP, SOAP, Long polling, ecc.
+
+Per ovviare a ciò la scelta più comune è l'impiego di WebSocket. Altre alternative potrebbero essere: Webhook, Server Sent Events (SSE).
+
+\subsection*{Ci sono modi alternativi di rappresentare il \href{https://github.com/SWEasabi/analisi-dei-requisiti/blob/69fd3970d6618d506a725d9a7cd83afa3417eed1/src-doc/contenuti/img/casi_uso_grafici-applicazione\%2Cgestione.png}{Sistema di gestione (pag. 11)}?}
+
+\emph{Rimandato a nuovo ricevimento/email.}
