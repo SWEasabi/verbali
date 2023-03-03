@@ -1,0 +1,36 @@
+\documentclass{article}
+\input{config}
+
+\newcommand{\gassets}{../../}
+
+\renewcommand{\title}{
+    \Huge Verbale riunione con:\\
+    \textit{Imolainformatica S.p.A.}
+}
+
+\newcommand{\people}{
+    \normalsize
+    \begin{center}
+        \begin{tabularx}{7cm}{l | X}            
+            \textbf{Approvazione} & Bonavigo Michele\\
+            \textbf{Segreteria} & Peron Samuel\\
+            \textbf{Verifica} & Casarotto Mattia\\
+            \hline
+            \textbf{Uso}& Interno\\
+            \textbf{Destinatario} & Il gruppo\\
+        \end{tabularx}
+    \end{center}
+}
+
+\begin{document}
+
+\input{\gassets global-assets/tex/header}
+
+\tableofcontents
+
+\newpage
+
+\input{contenuti/info-generali.tex}
+\input{contenuti/incontro.tex}
+
+\end{document}
