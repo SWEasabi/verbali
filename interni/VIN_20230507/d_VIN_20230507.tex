@@ -1,0 +1,41 @@
+\documentclass{article}
+\input{config}
+
+\newcommand{\gassets}{../../}
+
+\renewcommand{\title}{
+    \Huge Verbale scelta configurazione team
+}
+
+\newcommand{\people}{
+    \normalsize
+    \begin{center}
+        \begin{tabularx}{8cm}{l | X}            
+            \textbf{Approvazione} & Romano Davide\\
+            \textbf{Segreteria} & Pierobon Luca\\
+            \textbf{Verifica} & Peron Samuel\\
+
+            \hline
+
+            \textbf{Uso} & Interno \\
+            & Esterno \\
+            \textbf{Destinatario} & \textit{Il gruppo}\\
+            & Committente \\
+        \end{tabularx}
+    \end{center}
+}
+
+
+\begin{document}
+
+\input{\gassets global-assets/tex/header}
+
+\tableofcontents
+
+\newpage
+
+\input{contenuti/info-generali}
+\input{contenuti/ordine_del_giorno}
+\input{contenuti/svolgimento}
+
+\end{document}
